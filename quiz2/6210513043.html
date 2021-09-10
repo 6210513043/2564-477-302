@@ -111,7 +111,21 @@
 							<label for="lname">Enter your longitude:</label>
 							<input type="text" id="lname" name="lname"><br><br>
 							<input type="submit" value="Submit">
-					</form> 
+								<br>
+								<br>
+								<input type="button" value="กดเพื่อดูแผนที่" onclick="dialog()"> 
+								<dialog id="dialog">สวัสดีจ้า
+								<br>
+								<br>
+									<button onclick="getLocation()">ตกลง</button>
+								</dialog>
+								<script>
+									function dialog() {
+									  var x=document.getElementById("dialog");
+									  x.open=true
+								}
+								</script>
+						</form> 
 					</div>
 				</div>
 			</main>
@@ -146,6 +160,6 @@
 				<p>Footer...</p>
 			</div>
 		</footer>
-	
+		
 	</body>
 </html>
